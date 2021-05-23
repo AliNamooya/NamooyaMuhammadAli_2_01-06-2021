@@ -4,16 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/082d8e4dbc.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="reservia.css">
   <title>Reservia</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+    </style>
 </head>
 <body>
 
 <header>
 
 
-  <nav>
-    <img src="/images/logo/Reservia.svg" alt="logo">
+  <nav class="menu">
+    <img src="/images/logo/Reservia.svg" alt="logo" class="logo">
 
     <ul>
       <li><a href="#">Hébergements</a></li>
@@ -27,6 +31,18 @@
 
   <p><h1>Trouvez votre hébergement pour des vacances de rêve</h1></p>
   <p>En plein centre ville ou en pleine nature</p>
+
+  <form class="search">
+ <span class="search_icon_wrapper">
+  <i class="fas fa-map-marker-alt search_icon"></i>
+  
+ </span>
+
+  <input type="search" value="Marseille, France" placeholder="search" class="search_input">
+
+  <input type="submit" value="Rechercher" class="search_button">
+
+  </form>
 
 
 
@@ -45,133 +61,145 @@
 
 </header>
 
-<section>
 
-  <p><h1>Hébergements à Marseille</h1></p>
 
-  <div class="card">
+<section class="hero_banner">
 
-    <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo_hebergement">
-    <div class="container">
-      <h3>Auberge la Cannebière</h3>
-      <p>Nuit à partir de <strong>25€</strong></p>
 
-       <div class="rating"><!--
-      --><a href="#5" title="Donner 5 étoiles">☆</a><!--
-      --><a href="#4" title="Donner 4 étoiles">☆</a><!--
-      --><a href="#3" title="Donner 3 étoiles">☆</a><!--
-      --><a href="#2" title="Donner 2 étoiles">☆</a><!--
-      --><a href="#1" title="Donner 1 étoile">☆</a>
+ 
+  <div class="hebergement">
+
+    <div class="titre">
+      <p><h1>Hébergements à Marseille</h1></p>
+    </div>
+
+     <div class="card">
+
+       <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo_hebergement">
+
+        <div class="card_body_hebergement">
+         <h3>Auberge la Cannebière</h3>
+          <p>Nuit à partir de <strong>25€</strong></p>
+
+          <div class="rating"><!--
+          --><a href="#5" title="Donner 5 étoiles">☆</a><!--
+          --><a href="#4" title="Donner 4 étoiles">☆</a><!--
+         --><a href="#3" title="Donner 3 étoiles">☆</a><!--
+         --><a href="#2" title="Donner 2 étoiles">☆</a><!--
+         --><a href="#1" title="Donner 1 étoile">☆</a>
+          </div>
+
+          </div>
       </div>
 
-    </div>
-</div>
+    <div class="card">
 
-<div class="card">
+      <img src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo_hebergement">
+      <div class="card_body_hebergement">
+        <h3>Hôtel du port</h3>
+        <p>Nuit à partir de <strong>52€</strong></p>
 
-  <img src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo_hebergement">
-  <div class="container">
-    <h3>Hôtel du port</h3>
-    <p>Nuit à partir de <strong>52€</strong></p>
-
-     <div class="rating"><!--
-    --><a href="#5" title="Donner 5 étoiles">☆</a><!--
-    --><a href="#4" title="Donner 4 étoiles">☆</a><!--
-    --><a href="#3" title="Donner 3 étoiles">☆</a><!--
-    --><a href="#2" title="Donner 2 étoiles">☆</a><!--
-    --><a href="#1" title="Donner 1 étoile">☆</a>
-    </div>
+        <div class="rating">
+        <i class="fas fa-star blue"></i>
+        <i class="fas fa-star blue"></i>
+        <i class="fas fa-star blue"></i>
+        <i class="fas fa-star blue"></i>
+        <i class="fas fa-star"></i>
+        </div>
     
-  </div>
-</div>
-
-<div class="card">
-
-  <img src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photo_hebergement">
-  <div class="container">
-    <h3>Hôtel Les mouettes</h3>
-    <p>Nuit à partir de <strong>76€</strong></p>
-
-     <div class="rating"><!--
-    --><a href="#5" title="Donner 5 étoiles">☆</a><!--
-    --><a href="#4" title="Donner 4 étoiles">☆</a><!--
-    --><a href="#3" title="Donner 3 étoiles">☆</a><!--
-    --><a href="#2" title="Donner 2 étoiles">☆</a><!--
-    --><a href="#1" title="Donner 1 étoile">☆</a>
+      </div>
     </div>
+
+    <div class="card">
+
+      <img src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photo_hebergement">
+      <div class="card_body_hebergement">
+       <h3>Hôtel Les mouettes</h3>
+       <p>Nuit à partir de <strong>76€</strong></p>
+
+        <div class="rating"><!--
+        --><a href="#5" title="Donner 5 étoiles">☆</a><!--
+        --><a href="#4" title="Donner 4 étoiles">☆</a><!--
+        --><a href="#3" title="Donner 3 étoiles">☆</a><!--
+        --><a href="#2" title="Donner 2 étoiles">☆</a><!--
+        --><a href="#1" title="Donner 1 étoile">☆</a>
+        </div>
     
-  </div>
-</div>
-
-
-<div class="card">
-
-  <img src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo_hebergement">
-  <div class="container">
-    <h3>Hôtel de la mer</h3>
-    <p>Nuit à partir de <strong>46€</strong></p>
-
-     <div class="rating"><!--
-    --><a href="#5" title="Donner 5 étoiles">☆</a><!--
-    --><a href="#4" title="Donner 4 étoiles">☆</a><!--
-    --><a href="#3" title="Donner 3 étoiles">☆</a><!--
-    --><a href="#2" title="Donner 2 étoiles">☆</a><!--
-    --><a href="#1" title="Donner 1 étoile">☆</a>
+      </div>
     </div>
+
+
+    <div class="card">
+
+     <img src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo_hebergement">
+     <div class="card_body_hebergement">
+       <h3>Hôtel de la mer</h3>
+         <p>Nuit à partir de <strong>46€</strong></p>
+
+        <div class="rating"><!--
+       --><a href="#5" title="Donner 5 étoiles">☆</a><!--
+       --><a href="#4" title="Donner 4 étoiles">☆</a><!--
+       --><a href="#3" title="Donner 3 étoiles">☆</a><!--
+       --><a href="#2" title="Donner 2 étoiles">☆</a><!--
+       --><a href="#1" title="Donner 1 étoile">☆</a>
+        </div>
     
-  </div>
-</div>
-
-
-<div class="card">
-
-  <img src="/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo_hebergement">
-  <div class="container">
-    <h3>Auberge Le panier</h3>
-    <p>Nuit à partir de <strong>23€</strong></p>
-
-     <div class="rating"><!--
-    --><a href="#5" title="Donner 5 étoiles">☆</a><!--
-    --><a href="#4" title="Donner 4 étoiles">☆</a><!--
-    --><a href="#3" title="Donner 3 étoiles">☆</a><!--
-    --><a href="#2" title="Donner 2 étoiles">☆</a><!--
-    --><a href="#1" title="Donner 1 étoile">☆</a>
+      </div>
     </div>
+
+
+    <div class="card">
+
+      <img src="/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo_hebergement">
+      <div class="card_body_hebergement">
+       <h3>Auberge Le panier</h3>
+       <p>Nuit à partir de <strong>23€</strong></p>
+
+        <div class="rating"><!--
+        --><a href="#5" title="Donner 5 étoiles">☆</a><!--
+        --><a href="#4" title="Donner 4 étoiles">☆</a><!--
+        --><a href="#3" title="Donner 3 étoiles">☆</a><!--
+        --><a href="#2" title="Donner 2 étoiles">☆</a><!--
+        --><a href="#1" title="Donner 1 étoile">☆</a>
+        </div>
     
-  </div>
-</div>
-
-
-<div class="card">
-
-  <img src="/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo_hebergement">
-  <div class="container">
-    <h3>Hôtel chez Amina</h3>
-    <p>Nuit à partir de <strong>96€</strong></p>
-
-     <div class="rating"><!--
-    --><a href="#5" title="Donner 5 étoiles">☆</a><!--
-    --><a href="#4" title="Donner 4 étoiles">☆</a><!--
-    --><a href="#3" title="Donner 3 étoiles">☆</a><!--
-    --><a href="#2" title="Donner 2 étoiles">☆</a><!--
-    --><a href="#1" title="Donner 1 étoile">☆</a>
+      </div>
     </div>
+
+
+    <div class="card">
+
+      <img src="/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo_hebergement">
+      <div class="card_body_hebergement">
+        <h3>Hôtel chez Amina</h3>
+        <p>Nuit à partir de <strong>96€</strong></p>
+
+        <div class="rating"><!--
+        --><a href="#5" title="Donner 5 étoiles">☆</a><!--
+        --><a href="#4" title="Donner 4 étoiles">☆</a><!--
+        --><a href="#3" title="Donner 3 étoiles">☆</a><!--
+        --><a href="#2" title="Donner 2 étoiles">☆</a><!--
+        --><a href="#1" title="Donner 1 étoile">☆</a>
+        </div>
     
+      </div>
+    </div>
+
   </div>
-</div>
 
 
 
 
+  <div class="populaire">
 
-<aside>
+    <div class="titre">
+    <p><h1>Les plus populaires</h1></p>
+    </div>
 
-<p><h1>Les plus populaires</h1></p>
-
-<div class="card_populaire">
+    <div class="card_populaire">
 
   <img src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo_hebergement">
-  <div class="container">
+  <div class="card_body_populaire">
     <h3>Hôtel Le soleil du matin</h3>
     <p>Nuit à partir de <strong>128€</strong></p>
 
@@ -184,13 +212,13 @@
     </div>
     
   </div>
-</div>
+    </div>
 
 
-<div class="card_populaire">
+    <div class="card_populaire">
 
   <img src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo_hebergement">
-  <div class="container">
+  <div class="card_body_populaire">
     <h3>Au coeur de l'eau <br>Chambres d'hôtes</h3>
     <p>Nuit à partir de <strong>71€</strong></p>
 
@@ -203,13 +231,13 @@
     </div>
     
   </div>
-</div>
+    </div>
 
 
-<div class="card_populaire">
+    <div class="card_populaire">
 
   <img src="/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo_hebergement">
-  <div class="container">
+  <div class="card_body_populaire">
     <h3>Hôtel Tout bleu et Blanc</h3>
     <p>Nuit à partir de <strong>68€</strong></p>
 
@@ -222,25 +250,34 @@
     </div>
     
   </div>
-</div>
-</aside>
+    </div>
+
+  </div>
+
+
 
 </section>
 
 
 
+<section class="activite">
 
-
-<section>
+  <div class="titre">
   <p><h1>Activités à Marseille</h1></p>
+</div>
 
-  <div class="card_activites">
+<div class="activite_container">
+ 
+  <div class="activite_gauche">
+
+  <div class="card_activites_big">
     <img src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo activité">
     <div class="container">
       <h3>Vieux Port</h3>
     </div>
   </div>
 
+     <div class="activite_petit">
   <div class="card_activites">
     <img src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo activité">
     <div class="container">
@@ -256,15 +293,21 @@
     </div>
   </div>
 
+</div>
 
-  <div class="card_activites">
+</div>
+
+ 
+
+  <div class="activite_droit">
+  <div class="card_activites_big">
     <img src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo activité">
     <div class="container">
       <h3>Parc National des Calanques</h3>
     </div>
   </div>
 
-
+  <div class="activite_petit">
   <div class="card_activites">
     <img src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo activites">
     <div class="container">
@@ -280,11 +323,11 @@
     </div>
   </div>
 
+</div>
 
+</div>
 
-
-
-
+</div>
 </section>
 
 <footer>
