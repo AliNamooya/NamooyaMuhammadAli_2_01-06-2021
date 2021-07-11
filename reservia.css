@@ -399,7 +399,7 @@ h3
 {
 
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 3px 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 1.8em;
   width: 32%;
   margin-bottom: 25px;
@@ -559,7 +559,7 @@ margin-bottom: 30px;
 
 .activite_card {
   background-color: white;
-  box-shadow: 0 0 16px #0000002e;
+  box-shadow: 3px 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 1.25em;
   
 }
@@ -580,6 +580,7 @@ margin-bottom: 30px;
 .activite_card a
 {
   display: block;
+  width: 100%;
 }
 
 .activite_card img {
